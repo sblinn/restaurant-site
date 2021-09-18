@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us - Water Buffalo Bar & Grill</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+
+    <header>
+        <div id="site-title">
+            <h1>Water Buffalo Bar & Grill</h1>
+            <hr />
+        </div>
+        <nav class="navigation-bar">
+            <ul>
+                <li>
+                    <h2><a href="index.html">Home</a></h2>
+                </li>
+                <li>
+                    <h2><a href="menu.html">Menu</a></h2>
+                </li>
+                <li>
+                    <h2><a href="contact.html">Contact Us</a></h2>
+                </li>
+            </ul>
+            <hr />
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <form id="contact">
+                <label for="nameInput">Name: </label>
+                <input type="text" name="nameInput" >
+
+                <label for="emailInput">Email: </label>
+                <input type="text" name="emailInput" >
+
+                <label for="phoneInput">Phone: </label>
+                <input type="text" name="phoneInput" >
+
+                <label for="reasonInput">Reason for Inquiry: </label>
+                <select name="reasonInput" >
+                    <option value="Catering">Catering</option>
+                    <option value="PrivateParty">Private Party</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="addInfo">Additional Info: </label>
+                <input type="textarea" name="addInfo" >
+
+                <label for="newCustomer">Have you been to Water Buffalo Bar & Grill? </label><br/>
+                <input type="radio" name="newCustomer" value="No" checked/>No
+                <input type="radio" name="newCustomer" value="Yes"/>Yes
+
+                <label for="dayToContact">Best days to contact you: </label><br/>
+                <input type="checkbox" name="dayToContact" value="M"/>M
+                <input type="checkbox" name="dayToContact" value="T"/>T
+                <input type="checkbox" name="dayToContact" value="W"/>W
+                <input type="checkbox" name="dayToContact" value="Th"/>Th
+                <input type="checkbox" name="dayToContact" value="F"/>F
+
+                <label></label>
+                <input id="contact-submit-btn" type="submit" name="submitRequest" value="Send Request">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            100 Water St., Minnesota, 56082
+            <br>
+            952-005-6082
+        </div>
+    </footer>
+</body>
+
+</html>

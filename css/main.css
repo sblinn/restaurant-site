@@ -1,0 +1,95 @@
+
+
+
+
+.display-border {
+    border: 1px solid lightgray;
+    
+}
+
+#site-title {
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+    font-size: 2rem;
+    text-align: center;
+}
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin: 10vh 10vw 20vh 10vw;
+}
+
+.navigation-bar {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.navigation-bar ul {
+    display: inline-flex;
+    list-style: none; /* Remove bullets */
+    margin-top: 0;
+}
+
+.navigation-bar li {
+    margin-inline-end: 2em;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.homepage {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    text-align: center;
+}
+
+.homepage img {
+    overflow: hidden;
+    height: 150px;
+    width: 400px;
+}
+
+.homepage p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.menu {
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.menu th {
+    padding-top: 2em
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 1em;
+}
+#contact label {
+    text-align: right;
+    
+}
+
+#contact-submit-btn {
+    text-align: center;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 4em;
+    background-color: black;
+    color: white;
+}
