@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Menu - Water Buffalo Bar & Grill</title>	
-        <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="/css/main.css" />
-	</head>
-    <body>
 
-        <header>
-            <div id="site-title">
-                <h1>Water Buffalo Bar & Grill</h1>
-                <hr />
-            </div>
-            <nav class="navigation-bar">
-                <ul>
-                    <li>
-                        <h2><a href="index.html">Home</a></h2>
-                    </li>
-                    <li>
-                        <h2><a href="menu.html">Menu</a></h2>
-                    </li>
-                    <li>
-                        <h2><a href="contact.html">Contact Us</a></h2>
-                    </li>
-                </ul>
-                <hr />
-            </nav>
-        </header>
-    
-        <main>
-            <div class="wrapper">
-                <table class="menu">
+<head>
+    <title>Menu - Water Buffalo Bar & Grill</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/restaurantStyles.css" />
+
+    <style>
+        .menu #menu-entrees,
+        .menu #menu-beverages {
+            text-align: center;
+            table-layout: fixed;
+        }
+
+        #menu-entrees {
+            width: 100%;
+            background-color: rgb(253, 227, 242);
+            padding-block-end: 2em;
+        }
+
+        #menu-entrees th,
+        #menu-beverages th {
+            padding-top: 2em;
+            font-size: 1.25em
+        }
+
+        #menu-beverages {
+            background-color: rgb(253, 227, 242);
+            width: 100%;
+        }
+
+        #menu-beverages tr:nth-child(even) {
+            background-color: rgb(250, 237, 239);
+        }
+
+        #menu-beverages td {
+            padding: 0.5em;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="site-title">
+            <h1>Water Buffalo Bar & Grill</h1>
+        </div>
+        <nav class="navigation-bar">
+            <ul>
+                <li>
+                    <h2><a href="index.html">Home</a></h2>
+                </li>
+                <li>
+                    <h2><a href="menu.html">Menu</a></h2>
+                </li>
+                <li>
+                    <h2><a href="contact.html">Contact Us</a></h2>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="wrapper menu">
+            <table id="menu-entrees">
+                <tbody>
                     <tr>
                         <th>Burger & Fries</th>
                         <th>Hot Dog & Chips</th>
@@ -98,17 +134,43 @@
                         <td>$6.95</td>
                         <td></td>
                     </tr>
-                </table>
-            </div>
-        </main>
-    
-        <footer>
-            <div>
-                100 Water St., Minnesota, 56082
-                <br>
-                952-005-6082
-            </div>
-        </footer>
-    </body>
-    
+                </tbody>
+            </table>
+            <table id="menu-beverages">
+                <thead>
+                    <tr>
+                        <th colspan="2">Beverages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Root Beer</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bottled Water</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td>Lemonade</td>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td>$1.25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            100 Water St., Minnesota, 56082
+            <br>
+            952-005-6082
+        </div>
+    </footer>
+</body>
+
 </html>

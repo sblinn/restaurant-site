@@ -5,7 +5,43 @@
     <title>Contact Us - Water Buffalo Bar & Grill</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/restaurantStyles.css" />
+
+    <style>
+        #contact {
+            display: grid;
+            column-gap: 1.1em;
+            gap: 1em;
+            text-align: center;
+        }
+
+        #contact label {
+            font-weight: bold;
+            text-align: right;
+        }
+
+        #contact-textinput,
+        #contact-submit-btn {
+            display: grid;
+            grid-template-columns: 25vw 40vw;
+            gap: inherit;
+        }
+
+        #contact-textinput input[type="textarea"] {
+            min-height: 10vh;
+        }
+
+        #yes-no-radio,
+        #weekday-checkbox {
+            display: grid;
+            grid-template-columns: 25vw max-content;
+            gap: inherit;
+        }
+
+        #contact-submit-btn {
+            max-width: min-content;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,7 +49,6 @@
     <header>
         <div id="site-title">
             <h1>Water Buffalo Bar & Grill</h1>
-            <hr />
         </div>
         <nav class="navigation-bar">
             <ul>
@@ -27,7 +62,6 @@
                     <h2><a href="contact.html">Contact Us</a></h2>
                 </li>
             </ul>
-            <hr />
         </nav>
     </header>
 

@@ -1,0 +1,102 @@
+
+/* HEADER */
+
+#site-title {
+    padding: 0.25em;
+    font-size: 2.25em;
+    font-family: Amuba;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid darkgray;
+}
+
+html, body {
+    /* Ensures that theres no blank margin space, especially for 
+        header and footer elements */
+    min-height: 100%;
+    margin: 0;
+}
+
+    /* Sets margins to content to prevent content being pressed to the edges 
+        and adds space at the bottom */
+    .wrapper {
+        min-height: 100%;
+        padding: 10vh 10vw 20vh 10vw;
+    }
+
+  /* NAVIGATION BAR */ 
+    
+    .navigation-bar {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid darkgray; 
+    }
+
+    .navigation-bar ul {
+        display: inline-flex;
+        list-style: none; /* Remove bullets */
+    }
+
+    .navigation-bar li a {
+        margin-inline-end: 2em;
+        text-decoration: none; /* Remove underline */
+        font-weight: normal;
+    }
+
+        .navigation-bar li a:link {
+            color:brown
+        }
+
+        .navigation-bar li a:hover {
+            font-weight: bold;
+        }
+
+        .navigation-bar li a:visited {
+            color: cadetblue;
+        }
+
+
+/* BODY */
+
+body main {
+    
+    /* will put background color here */
+}
+
+#home-main {
+    background-color: rgb(250, 237, 239);
+}
+
+.homepage p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* FOOTER */
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 4em;
+    background-color: black;
+    color: white;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: "Amuba";
+    src: url("/assets/amuba_2/Amuba\ FREE.otf");
+}
+
+@font-face {
+    font-family: "Hamberger-Bold";
+    src: url("/assets/Hamberger-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Rose Velt";
+    src: url("/assets/Rose\ Velt.ttf");
+}
+
