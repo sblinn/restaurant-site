@@ -74,16 +74,33 @@ li a {
 
 #contact {
     display: grid;
-    grid-template-columns: max-content max-content;
+    column-gap: 1em;
     gap: 1em;
+    text-align: center;
 }
+
 #contact label {
     text-align: right;
-    
+}
+
+#contact-textinput, #contact-submit-btn {
+    display: grid;
+    grid-template-columns: 25vw 40vw;
+    gap: inherit;
+}
+
+#contact-textinput input[type="textarea"] {
+    min-height: 10vh;
+}
+
+#yes-no-radio, #weekday-checkbox {
+    display: grid;
+    grid-template-columns: 25vw max-content;
+    gap: inherit;
 }
 
 #contact-submit-btn {
-    text-align: center;
+    max-width: min-content;
 }
 
 footer {

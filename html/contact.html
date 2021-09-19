@@ -34,39 +34,51 @@
     <main>
         <div class="wrapper">
             <form id="contact">
-                <label for="nameInput">Name: </label>
-                <input type="text" name="nameInput" >
+                <div id="contact-textinput">
+                    <label for="nameInput">Name: </label>
+                    <input type="text" name="nameInput">
 
-                <label for="emailInput">Email: </label>
-                <input type="text" name="emailInput" >
+                    <label for="emailInput">Email: </label>
+                    <input type="text" name="emailInput">
 
-                <label for="phoneInput">Phone: </label>
-                <input type="text" name="phoneInput" >
+                    <label for="phoneInput">Phone: </label>
+                    <input type="text" name="phoneInput">
 
-                <label for="reasonInput">Reason for Inquiry: </label>
-                <select name="reasonInput" >
-                    <option value="Catering">Catering</option>
-                    <option value="PrivateParty">Private Party</option>
-                    <option value="Feedback">Feedback</option>
-                    <option value="Other">Other</option>
-                </select>
+                    <label for="reasonInput">Reason for Inquiry: </label>
+                    <select name="reasonInput">
+                        <option value="Catering">Catering</option>
+                        <option value="PrivateParty">Private Party</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                    </select>
 
-                <label for="addInfo">Additional Info: </label>
-                <input type="textarea" name="addInfo" >
+                    <label for="addInfo">Additional Info: </label>
+                    <input type="textarea" name="addInfo">
+                </div>
 
-                <label for="newCustomer">Have you been to Water Buffalo Bar & Grill? </label><br/>
-                <input type="radio" name="newCustomer" value="No" checked/>No
-                <input type="radio" name="newCustomer" value="Yes"/>Yes
+                <div id="yes-no-radio">
+                    <label for="newCustomer">Have you been to Water Buffalo Bar & Grill?: </label>
+                    <span>
+                        <input type="radio" name="newCustomer" value="No" checked />No
+                        <input type="radio" name="newCustomer" value="Yes" />Yes
+                    </span>
+                </div>
 
-                <label for="dayToContact">Best days to contact you: </label><br/>
-                <input type="checkbox" name="dayToContact" value="M"/>M
-                <input type="checkbox" name="dayToContact" value="T"/>T
-                <input type="checkbox" name="dayToContact" value="W"/>W
-                <input type="checkbox" name="dayToContact" value="Th"/>Th
-                <input type="checkbox" name="dayToContact" value="F"/>F
+                <div id="weekday-checkbox">
+                    <label for="dayToContact">Best days to contact you: </label>
+                    <span>
+                        <input type="checkbox" name="dayToContact" value="M" />M
+                        <input type="checkbox" name="dayToContact" value="T" />T
+                        <input type="checkbox" name="dayToContact" value="W" />W
+                        <input type="checkbox" name="dayToContact" value="Th" />Th
+                        <input type="checkbox" name="dayToContact" value="F" />F
+                    </span>
+                </div>
 
-                <label></label>
-                <input id="contact-submit-btn" type="submit" name="submitRequest" value="Send Request">
+                <div id="contact-submit-btn">
+                    <label></label>
+                    <input id="contact-submit-btn" type="submit" name="submitRequest" value="Send Request">
+                </div>
             </form>
         </div>
     </main>
