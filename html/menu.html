@@ -5,163 +5,200 @@
     <title>Menu - Water Buffalo Bar & Grill</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/restaurantStyles.css" />
 
+    <noscript>
+        <style type="text/css">
+            .page-container {
+                display: none;
+            }
+        </style>
+        <div>
+            <h4>This site requires JavaScript.</h4>
+        </div>
+    </noscript>
+
     <style>
-        .menu #menu-entrees,
-        .menu #menu-beverages {
+        #entrees {
+            display: flex;
+        }
+
+        .entree-card {
+            border: 4px solid white;
+            background-color: rgb(253, 227, 242);
+            padding: 0em;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        #beverages {
             text-align: center;
             table-layout: fixed;
+            margin-bottom: 5vh;
         }
 
-        #menu-entrees {
-            width: 100%;
-            background-color: rgb(253, 227, 242);
-            padding-block-end: 2em;
-        }
-
-        #menu-entrees th,
-        #menu-beverages th {
-            padding-top: 2em;
-            font-size: 1.25em
-        }
-
-        #menu-beverages {
-            background-color: rgb(253, 227, 242);
-            width: 100%;
-        }
-
-        #menu-beverages tr:nth-child(even) {
+        #beverages tr:nth-child(even) {
             background-color: rgb(250, 237, 239);
         }
 
-        #menu-beverages td {
-            padding: 0.5em;
+        #beverages th {
+            padding-top: 1em;
+            font-size: 1.25em
         }
 
+        #beverages td {
+            padding: 0.5em;
+        }
     </style>
 
 </head>
 
 <body>
-
     <header>
-        <div id="site-title">
-            <h1>Water Buffalo Bar & Grill</h1>
+        <div class="container-fluid">
+            <div class="jumbotron announcement">
+                <h4 class="display-4">Great News: We're opening a new location in Chanhassen! </h4>
+            </div>
         </div>
-        <nav class="navigation-bar">
-            <ul>
-                <li>
-                    <h2><a href="index.html">Home</a></h2>
+        <div class="container-fluid">
+            <div class="jumbotron jumbotron-fluid site-title">
+                <h1 class="display-2">Water Buffalo Bar & Grill</h1>
+            </div>
+        </div>
+        <nav class="container-fluid">
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><img src="/assets/home-fill.svg"></a>
                 </li>
-                <li>
-                    <h2><a href="menu.html">Menu</a></h2>
+                <li class="nav-item">
+                    <a class="nav-link active" href="menu.html">Menu</a>
                 </li>
-                <li>
-                    <h2><a href="contact.html">Contact Us</a></h2>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="wrapper menu">
-            <table id="menu-entrees">
-                <tbody>
-                    <tr>
-                        <th>Burger & Fries</th>
-                        <th>Hot Dog & Chips</th>
-                        <th>Italian Sausage & Peppers</th>
-                    </tr>
-                    <tr>
-                        <td>An American Classic!</td>
-                        <td>A Summer Classic!</td>
-                        <td>An All-Time Favorite!</td>
-                    </tr>
-                    <tr>
-                        <td>Your choice - with or without cheese</td>
-                        <td>Your choice - white or wheat bun</td>
-                        <td>Your choice - mild or spicy Cole Slaw</td>
-                    </tr>
-                    <tr>
-                        <td>Pickle, onion, tomato, and lettuce</td>
-                        <td>Relish, mustard, and ketchup</td>
-                        <td>Served with garlic mashers</td>
-                    </tr>
-                    <tr>
-                        <td>Served with our famous thick cut french fries</td>
-                        <td>Served with our house-made chips</td>
-                        <td>$10.95</td>
-                    </tr>
-                    <tr>
-                        <td>$7.95</td>
-                        <td>$7.95</td>
-                        <td></td>
-                    </tr>
+        <section class="container-fluid wrapper">
+            <div id="entrees" class="row">
+                <div class="entree-card text-center col-md-4 col-sm-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger & Fries</h5>
+                        <p class="card-text">
+                            An American Classic! <br>
+                            Your choice - with or without cheese <br>
+                            Pickle, onion, tomato, and lettuce <br>
+                            Served with our famous thick cut french fries <br>
+                            $7.95 <br>
+                        </p>
+                    </div>
+                </div>
 
-                    <tr>
-                        <th>Tenderloin Sandwich & Chips</th>
-                        <th>House Salad</th>
-                        <th>Brisket Sandwich & Fries</th>
-                    </tr>
-                    <tr>
-                        <td>Really Hits the Spot!</td>
-                        <td>On the Lighter Side!</td>
-                        <td>A Taste of Texas!</td>
-                    </tr>
-                    <tr>
-                        <td>Plain or Sesame Seed Bun</td>
-                        <td>Your choice - with or without cheese</td>
-                        <td>Smoked Brisket on thick-cut Texas Toast</td>
-                    </tr>
-                    <tr>
-                        <td>Pickle, onion, tomato, and lettuce</td>
-                        <td>Iceberg lettuce, tomatoes, peppers</td>
-                        <td>Cole Slaw</td>
-                    </tr>
-                    <tr>
-                        <td>Served with our house-made chips</td>
-                        <td>Thousand Island or Ranch Dressing</td>
-                        <td>Served with our famous thick-cut french fries</td>
-                    </tr>
-                    <tr>
-                        <td>$8.95</td>
-                        <td>Served with a dinner roll</td>
-                        <td>$7.95</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>$6.95</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table id="menu-beverages">
-                <thead>
-                    <tr>
-                        <th colspan="2">Beverages</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Root Beer</td>
-                        <td>$3.00</td>
-                    </tr>
-                    <tr>
-                        <td>Bottled Water</td>
-                        <td>$1.25</td>
-                    </tr>
-                    <tr>
-                        <td>Lemonade</td>
-                        <td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Iced Tea</td>
-                        <td>$1.25</td>
-                    </tr>
-                </tbody>
-            </table>
+                <div class="entree-card text-center col-md-4 col-sm-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger & Fries</h5>
+                        <p class="card-text">
+                            A Summer Classic! <br>
+                            Your choice - white or wheat bun <br>
+                            Relish, mustard, and ketchup<br>
+                            Served with our house-made chips <br>
+                            $7.95 <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="entree-card text-center col-md-4 col-sm-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Italian Sausage & Peppers</h5>
+                        <p class="card-text">
+                            An All-Time Favorite! <br>
+                            Your choice - mild or spicy Cole Slaw <br>
+                            Relish, mustard, and ketchup<br>
+                            $10.95 <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="entree-card text-center col-md-4 col-sm-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Tenderloin Sandwich & Chips</h5>
+                        <p class="card-text">
+                            Really Hits the Spot! <br>
+                            Plain or Sesame Seed Bun <br>
+                            Pickle, onion, tomato, and lettuce <br>
+                            Served with our house-made chips <br>
+                            $8.95 <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="entree-card text-center col-md-4 col-sm-6">
+                    <div class="card-body">
+                        <h5 class="card-title">House Salad</h5>
+                        <p class="card-text">
+                            On the Lighter Side! <br>
+                            Your choice - with or without cheese <br>
+                            Iceberg lettuce, tomatoes, peppers <br>
+                            Thousand Island or Ranch Dressing <br>
+                            Served with a dinner roll <br>
+                            $6.95 <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="entree-card text-center col-md-4 col-sm-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Brisket Sandwich & Fries</h5>
+                        <p class="card-text">
+                            A Taste of Texas! <br>
+                            Smoked Brisket on thick-cut Texas Toast <br>
+                            Cole Slaw <br>
+                            Served with our famous thick-cut french fries <br>
+                            $7.95 <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="entree-card text-center col-12">
+                    <div class="card-body">
+                        <table id="beverages" class="container-fluid mt-2">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Beverages</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Root Beer</td>
+                                    <td>$3.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Bottled Water</td>
+                                    <td>$1.25</td>
+                                </tr>
+                                <tr>
+                                    <td>Lemonade</td>
+                                    <td>$1.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Iced Tea</td>
+                                    <td>$1.25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </section>
+
     </main>
 
     <footer>
@@ -171,6 +208,17 @@
             952-005-6082
         </div>
     </footer>
+
+    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

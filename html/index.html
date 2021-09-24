@@ -1,58 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<div class="container-fluid">
 
-<head>
-    <title>Water Buffalo Bar & Grill</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/css/restaurantStyles.css" />
-</head>
+    <head>
+        <title>Water Buffalo Bar & Grill</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-<body>
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/restaurantStyles.css" />
 
-    <header>
-        <div id="site-title">
-            <h1>Water Buffalo Bar & Grill</h1>
-        </div>
-        <nav class="navigation-bar">
-            <ul>
-                <li>
-                    <h2><a href="index.html">Home</a></h2>
-                </li>
-                <li>
-                    <h2><a href="menu.html">Menu</a></h2>
-                </li>
-                <li>
-                    <h2><a href="contact.html">Contact Us</a></h2>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main id="home-main">
-        <div class="wrapper">
-            <div class="homepage" style="max-width: 100%; max-height: 100%; display: block; text-align: center;">
-                <figure>
-                    <img src="/images/landscape.jpg" alt="Middle of nowhere field landscape photo by Sara Blinn"
-                        style="overflow: hidden; height: 150px; width: 400px;">
-                </figure>
-                <p>
-                    Water Buffalo Bar & Grill has been a family-owned restaurant in rural Minnesota since 1956. Best
-                    known for our spectacular outdoor views and delicious dishes. Reserve window seating and enjoy the
-                    birds at the feeders and the local wildlife that roam freely across the nature reserves surrounding
-                    the property. Or come have a drink at our bar.
-                </p>
+        <noscript>
+            <style type="text/css">
+                .page-container {
+                    display: none;
+                }
+            </style>
+            <div>
+                <h4>This site requires JavaScript.</h4>
             </div>
-        </div>
-    </main>
+        </noscript>
+    </head>
 
-    <footer>
-        <div>
-            100 Water St., Minnesota, 56082
-            <br>
-            952-005-6082
+    <body>
+        <div class="page-container">
+            <header>
+                <div class="container-fluid">
+                    <div class="jumbotron announcement">
+                        <h4 class="display-4">Great News: We're opening a new location in Chanhassen! </h4>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="jumbotron jumbotron-fluid site-title">
+                        <h1 class="display-2">Water Buffalo Bar & Grill</h1>
+                    </div>
+                </div>
+                <nav class="container-fluid">
+                    <ul class="nav nav-pills justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html"><img src="/assets/home-fill.svg"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main id="home-main" class="wrapper">
+                <div class="container-md">
+                    <!-- homepage image is currently set to a fixed width in accordance with the supplied dimensions in assessment #1 wireframe -->
+                    <div class="homepage"
+                        style="max-width: 100%; max-height: 100%; display: block; text-align: center;">
+                        <figure class="container">
+                            <img src="/images/landscape.jpg" alt="Middle of nowhere field landscape photo by Sara Blinn"
+                                style="overflow: hidden; height: 150px; width: 400px;">
+                            <p class="content-pad-before">
+                                Water Buffalo Bar & Grill has been a family-owned restaurant in rural Minnesota since
+                                1956. Best known for our spectacular outdoor views and delicious dishes. Reserve window
+                                seating and enjoy the birds at the feeders and the local wildlife that roam freely
+                                across the nature reserves surrounding the property. Not hungry? Come have a drink at
+                                our bar. 
+                            </p>
+                        </figure>
+                    </div>
+                </div>
+                <div class="container col-10 wrapper">
+                    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#home-carousel" data-slide-to="1"></li>
+                            <li data-target="#home-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="/images/snake-ad.jpg"
+                                    alt="We're opening a new location. Image of a snake.">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5></h5>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/food.jpg"
+                                    alt="Image of grilled chicken mango salsa.">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>We're rolling out our seasonal menu, with special options for this season.</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/scoby.jpg" alt="Image of SCOBY in kombucha.">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>The Drink of the Month is</p>
+                                    <h2>SG Special Brew</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/landscape3.jpg"
+                                    alt="Image of fictional nature reserves that are actually just someone's backyard.">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <div>
+                    100 Water St., Minnesota, 56082
+                    <br>
+                    952-005-6082
+                </div>
+            </footer>
+
+            <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
         </div>
-    </footer>
-</body>
+    </body>
+</div>
 
 </html>
